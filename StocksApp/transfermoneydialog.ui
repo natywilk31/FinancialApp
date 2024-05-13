@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>transferMoneyDialog</class>
+ <widget class="QDialog" name="transferMoneyDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>61</y>
+     <width>82</width>
+     <height>167</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="fromLabel">
+      <property name="text">
+       <string>From:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QComboBox" name="fromComboBox">
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string>Select</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Savings</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Checkings</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="toLabel">
+      <property name="text">
+       <string>To:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QComboBox" name="toComboBox">
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string>Savings</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Savings</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Checkings</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="amountLabel">
+      <property name="text">
+       <string>Amount:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QDoubleSpinBox" name="amountSpinBox">
+      <property name="maximum">
+       <double>1000.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="transferButton">
+      <property name="text">
+       <string>Transfer</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
